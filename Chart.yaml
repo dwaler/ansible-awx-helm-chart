@@ -1,13 +1,15 @@
 apiVersion: v1
-description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcahed)
-name: awx
-version: 0.6.0
 appVersion: 6.1.0
-maintainers:
-  - name: kim0
-    email: email.ahmedkamal@googlemail.com
-sources:
-  - https://github.com/ansible/awx
+description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql,
+  memcahed)
+icon: http://www.test.png
 keywords:
 - ansible
 - awx
+maintainers:
+- email: email.ahmedkamal@googlemail.com
+  name: kim0
+name: awx
+sources:
+- https://github.com/ansible/awx
+version: 0.7.2

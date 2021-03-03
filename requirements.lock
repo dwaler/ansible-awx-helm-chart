@@ -1,12 +1,12 @@
 dependencies:
 - name: rabbitmq
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 6.2.6
+  repository: https://charts.bitnami.com/bitnami
+  version: 6.25.8
 - name: postgresql
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 6.2.0
+  repository: https://charts.bitnami.com/bitnami
+  version: 8.9.4
 - name: memcached
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 2.9.0
-digest: sha256:337499e3c8051b6439b4ac4a873617643bc11e46096672d222d23bcef232c83f
-generated: "2019-08-09T18:06:53.3108+02:00"
+  repository: https://charts.bitnami.com/bitnami
+  version: 4.2.17
+digest: sha256:3e260dfc9be90a47a547ad5b04fd92f3180bb75deaa4ef801be405251c63d890
+generated: "2020-05-08T11:19:12.584356+02:00"
