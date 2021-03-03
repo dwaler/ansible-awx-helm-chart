@@ -11,12 +11,14 @@ awx_web:
     repository: ansible/awx_web
     tag: 9.1.0
     pullPolicy: IfNotPresent
+    pullSecrets:
 
 awx_task:
   image:
     repository: ansible/awx_task
     tag: 9.1.0
     pullPolicy: IfNotPresent
+    pullSecrets:
 
 # AWX config
 awx:
