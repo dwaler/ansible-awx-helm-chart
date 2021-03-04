@@ -27,6 +27,7 @@ spec:
         - name: web
           image: "{{ .Values.awx_web.image.repository }}:{{ .Values.awx_web.image.tag }}"
           imagePullPolicy: {{ .Values.awx_web.image.pullPolicy }}
+          imagePullSecrets: {{ .Values.awx_web.image.pullSecrets }}
           ports:
             - name: http
               containerPort: {{ .Values.service.internalPort }}
@@ -107,6 +108,7 @@ spec:
         - name: task
           image: "{{ .Values.awx_task.image.repository }}:{{ .Values.awx_task.image.tag }}"
           imagePullPolicy: {{ .Values.awx_task.image.pullPolicy }}
+          imagePullSecrets: {{ .Values.awx_task.image.pullSecrets }}
           command:
             - /usr/bin/launch_awx_task.sh
           volumeMounts:
